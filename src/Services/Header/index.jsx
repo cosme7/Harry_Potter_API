@@ -1,0 +1,59 @@
+import React from "react";
+import Logo from "./Assets/hp_logo.png"
+import Grycrest from "./Assets/Gryffindor_Crest.png";
+import Huffcrest from "./Assets/Hufflepuff_Crest.png";
+import Ravcrest from "./Assets/Ravenclaw_Crest.png";
+import Slycrest from "./Assets/Slytherin_Crest.png";
+import { Link } from "react-router-dom";
+import * as S from "./style";
+
+export default function Header() {
+  return (
+    <>
+      <header>
+        <S.Container>
+          <S.Title>
+            <img src={Logo} alt="Harry Potter Logo" />
+            <h1>Lovers</h1>
+          </S.Title>
+          <nav>
+            <S.List>
+              <Link to='/'><li>Home</li></Link>
+              <li>Houses
+                <div>
+                  <S.House>
+                    <li>
+                      <Link to='/gryffindor'>
+                        <S.Img src={Grycrest} alt="Gryffindor Crest" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to='/hufflepuff'>
+                        <S.Img src={Huffcrest} alt="Hufflepuff Crest" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to='/ravenclaw'>
+                        <S.Img src={Ravcrest} alt="Ravenclaw Crest" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to='/slytherin'>
+                        <S.Img src={Slycrest} alt="Slytherin Crest" />
+                      </Link>
+                    </li>
+                  </S.House>
+                </div>
+              </li>
+              <Link to='/spells'><li>Spells</li></Link>
+            </S.List>
+          </nav>
+          <S.Form onSubmit={(e) => e.preventDefault()}>
+              <input type="text" />
+              <button type="reset">Search</button>
+          </S.Form>
+        </S.Container>
+      </header>
+    </>
+  );
+}

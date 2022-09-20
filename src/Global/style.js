@@ -8,4 +8,16 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
 
+    :root{
+        --ff-primary: 'Henny Penny', cursive;
+        --ff-secondary: 'Sofia', cursive;
+        --ff-footer: 'Ubuntu', sans-serif;
+        /*  */
+        --clr-primary: #FFFFFF;
+        --clr-secondary: ;
+        /*  */
+        --bg-primary: ;
+        --bg-secondary: ;
+        /*  */
+    }
 `;
