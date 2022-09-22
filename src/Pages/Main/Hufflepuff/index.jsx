@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Flag from "../../../Assets/Flag_Hufflepuff.png";
 import axios from "axios";
+import Flag from "../../../Assets/Flag_Hufflepuff.png";
+import * as S from "./style"
 
 export default function Hufflepuff(){
 
@@ -18,16 +19,19 @@ export default function Hufflepuff(){
   return (
     <>
       <main>
-        {character.map((item, index) =>(
-          <div key={index}>
-            <h2>{item.name}</h2>
-            <p>{item.house}</p>
-            <figure key={index}>
-              <img src={item.image} alt={item.name} title={item.name} />
-              <img src={Flag} alt="Hufflepuff Flag" />
-            </figure>
-          </div>
-        ))};
+      <S.Container>
+          {character.map((item, index) =>(
+            <S.Div key={index}>
+              <h2>Actor: {item.actor}</h2>
+              <h3>My role is: {item.name}</h3>
+              <p>Patronus: {item.patronus}</p>
+              <div>
+                <S.Photo src={item.image} alt={item.name} title={item.name} />
+                <S.Symbol src={Flag} alt="Hufflepuff Flag" />
+              </div>
+            </S.Div>
+          ))};
+        </S.Container>
       </main>
     </>
   );

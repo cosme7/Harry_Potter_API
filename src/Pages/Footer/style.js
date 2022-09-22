@@ -11,7 +11,15 @@ export const Container = styled.section`
     p{
         font-size: clamp(0.75rem, 1vw, 1.5rem);
         font-family: var(--ff-footer);
-        text-shadow: 0.2em 0.2em 0.2em blueviolet;
+        text-shadow: 2px 2px 0 #000000, 
+        2px -2px 0 #000000, 
+        -2px 2px 0 #4074b5, 
+        -2px -2px 0 #4074b5, 
+        2px 0px 0 #4074b5, 
+        0px 2px 0 #4074b5, 
+        -2px 0px 0 #4074b5, 
+        0px -2px 0 #4074b5, 
+        2px 2px 2px rgba(0,0,0,0);
         color: var(--clr-primary);
         text-align: center;
     }
@@ -21,7 +29,7 @@ export const Logo = styled.img`
     width: clamp(45px, 3vw, 100px);
     aspect-ratio: 1;
     border-radius: 50%;
-    border: 2px solid var(--bg-two);
+    filter: drop-shadow(0 0 20px var(--bg-one));
 `;
 
 export const Nav = styled.nav`

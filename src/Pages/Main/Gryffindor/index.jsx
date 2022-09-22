@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Flag from "../../../Assets/Flag_Gryffindor.png";
 import axios from "axios";
+import Flag from "../../../Assets/Flag_Gryffindor.png";
+import * as S from "./style"
 
 export default function Gryffindor(){
   
@@ -18,16 +19,19 @@ export default function Gryffindor(){
   return (
     <>
       <main>
-        {character.map((item, index) =>(
-          <div key={index}>
-              <h2>{item.name}</h2>
-              <p>{item.house}</p>
-              <figure>
-                <img src={item.image} alt={item.name} title={item.name} />
-                <img src={Flag} alt="Gryffindor Flag" />
-              </figure>
-          </div>
-        ))};
+        <S.Container>
+          {character.map((item, index) =>(
+            <S.Div key={index}>
+              <h2>Actor: {item.actor}</h2>
+              <h3>My role is: {item.name}</h3>
+              <p>Patronus: {item.patronus}</p>
+              <div>
+                <S.Photo src={item.image} alt={item.name} title={item.name} />
+                <S.Symbol src={Flag} alt="Gryffindor Flag" />
+              </div>
+            </S.Div>
+          ))};
+        </S.Container>
       </main>
     </>
   );

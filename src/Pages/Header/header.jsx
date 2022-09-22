@@ -4,7 +4,7 @@ import Grycrest from "../../Assets/Crest_Gryffindor.png";
 import Huffcrest from "../../Assets/Crest_Hufflepuff.png";
 import Ravcrest from "../../Assets/Crest_Ravenclaw.png";
 import Slycrest from "../../Assets/Crest_Slytherin.png";
-import Search from "../../Assets/search_icon.svg"
+import Search from "../../Components/Search";
 import { Link } from "react-router-dom";
 import * as S from "./style";
 
@@ -49,12 +49,7 @@ export default function Header() {
               <Link to='/spells'><li>Spells</li></Link>
             </S.List>
           </nav>
-          <S.Form onSubmit={(e) => e.preventDefault()}>
-              <input type="text" />
-              <button type="reset">
-                <img src={Search} alt="Search Icon" />
-              </button>
-          </S.Form>
+          <Search />
         </S.Container>
       </header>
     </>

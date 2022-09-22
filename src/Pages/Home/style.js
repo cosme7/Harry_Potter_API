@@ -29,12 +29,3 @@ export const Container = styled.section`
         grid-area: 1 / 3;
     }
 `;
-
-// export const Div = styled.div`
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     position: absolute;
-//     inset: 0;
-// `;

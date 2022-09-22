@@ -26,6 +26,15 @@ export const Title = styled.div`
     h1{
         font-family: var(--ff-primary);
         font-size: clamp(2rem, 3vw, 4rem);
+        text-shadow: 2px 2px 0 #000000, 
+        2px -2px 0 #000000, 
+        -2px 2px 0 #4074b5, 
+        -2px -2px 0 #4074b5, 
+        2px 0px 0 #4074b5, 
+        0px 2px 0 #4074b5, 
+        -2px 0px 0 #4074b5, 
+        0px -2px 0 #4074b5, 
+        2px 2px 2px rgba(0,0,0,0);
         color: var(--clr-primary);
     }
 `;
@@ -49,18 +58,30 @@ export const List = styled.ul`
     }
 
     div:where(:hover, :focus-visible){
-        box-shadow: 0 0 0.5em 0 var(--bg-one);
         filter: drop-shadow(0 0 20px var(--bg-one));
     }
 
     li{
         font-size: clamp(1.5rem, 2vw, 2rem);
         font-family: var(--ff-secondary);
+        text-shadow: 2px 2px 0 #000000, 
+        2px -2px 0 #000000, 
+        -2px 2px 0 #4074b5, 
+        -2px -2px 0 #4074b5, 
+        2px 0px 0 #4074b5, 
+        0px 2px 0 #4074b5, 
+        -2px 0px 0 #4074b5, 
+        0px -2px 0 #4074b5, 
+        2px 2px 2px rgba(0,0,0,0);
         color: var(--clr-primary);
     }
 
     li:where(:hover, :focus-visible) div{
         display: initial;
+    }
+
+    li:active{
+        color: red;
     }
 
     a{
@@ -85,16 +106,5 @@ export const Img = styled.img`
     :where(:hover, :focus){
         transform: scale(1.5);
         filter: drop-shadow(0 0 10px var(--bg-one));
-    }
-`;
-
-export const Form = styled.form`
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-
-    img{
-        width: 20px;
-        aspect-ratio: 1;
     }
 `;
