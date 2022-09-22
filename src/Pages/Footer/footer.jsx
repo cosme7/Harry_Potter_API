@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../../Assets/hp_logo.png"
-import LinkeDin from "../../Assets/footer_01.svg"
-import GitHub from "../../Assets/footer_02.svg"
-import Discord from "../../Assets/footer_03.svg"
-import Facebook from "../../Assets/footer_04.svg"
+import LinkeDin from "../../Assets/footer_01.png"
+import GitHub from "../../Assets/footer_02.png"
+import Discord from "../../Assets/footer_03.png"
+import Facebook from "../../Assets/footer_04.png"
 import * as S from "./style";
 
 export default function Footer(){

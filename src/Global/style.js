@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
         min-height: 100vh;
         background-image: url(${Background});
-        background-size: 100% 100%;
     }
 
     :root{

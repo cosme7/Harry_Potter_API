@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Wand from "../../../Assets/spells.png"
+import * as S from "./style"
 
 export default function Header(){
 
@@ -16,14 +18,17 @@ export default function Header(){
     
     return(
         <>
-            <main>
+        <main>
+            <S.Container>
                 {spells.map((item, index) => (
-                    <div>
+                    <S.Div>
                         <h2>{item.name}</h2>
+                        <img src={Wand} alt="Wand" />
                         <p>{item.description}</p>
-                    </div>
+                    </S.Div>
                 ))};
-            </main>
+            </S.Container>
+        </main>
         </>
     );
 };

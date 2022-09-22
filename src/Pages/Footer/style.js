@@ -37,6 +37,6 @@ export const Img = styled.img`
 
     :where(:hover, :focus){
         transform: scale(1.1);
-        filter: drop-shadow(0 0 5px var(--bg-one));
+        filter: drop-shadow(0 0 3px var(--bg-one));
     }
 `;
