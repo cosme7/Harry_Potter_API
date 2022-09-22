@@ -1,9 +1,10 @@
 import React from "react";
-import Logo from "./Assets/hp_logo.png"
-import Grycrest from "./Assets/Gryffindor_Crest.png";
-import Huffcrest from "./Assets/Hufflepuff_Crest.png";
-import Ravcrest from "./Assets/Ravenclaw_Crest.png";
-import Slycrest from "./Assets/Slytherin_Crest.png";
+import Logo from "../../Assets/hp_logo.png"
+import Grycrest from "../../Assets/Crest_Gryffindor.png";
+import Huffcrest from "../../Assets/Crest_Hufflepuff.png";
+import Ravcrest from "../../Assets/Crest_Ravenclaw.png";
+import Slycrest from "../../Assets/Crest_Slytherin.png";
+import Search from "../../Assets/search_icon.svg"
 import { Link } from "react-router-dom";
 import * as S from "./style";
 
@@ -50,7 +51,9 @@ export default function Header() {
           </nav>
           <S.Form onSubmit={(e) => e.preventDefault()}>
               <input type="text" />
-              <button type="reset">Search</button>
+              <button type="reset">
+                <img src={Search} alt="Search Icon" />
+              </button>
           </S.Form>
         </S.Container>
       </header>

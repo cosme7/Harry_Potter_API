@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Flag from "../Assets/Ravenclaw_Flag.png"
+import Flag from "../../../Assets/Flag_Ravenclaw.png";
 import axios from "axios";
 
 export default function Ravenclaw()  {

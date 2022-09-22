@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Flag from "../Assets/Hufflepuff_Flag.png"
+import Flag from "../../../Assets/Flag_Hufflepuff.png";
 import axios from "axios";
 
 export default function Hufflepuff(){

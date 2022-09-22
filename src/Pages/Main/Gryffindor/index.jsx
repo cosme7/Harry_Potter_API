@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Flag from "../Assets/Gryffindor_Flag.png"
+import Flag from "../../../Assets/Flag_Gryffindor.png";
 import axios from "axios";
 
 export default function Gryffindor(){
