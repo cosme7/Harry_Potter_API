@@ -99,6 +99,7 @@ export const List = styled.ul`
         0px -2px 0 #4074b5, 
         2px 2px 2px rgba(0,0,0,0);
         color: var(--clr-primary);
+        cursor: pointer;
     }
 
     li:where(:hover, :focus-visible) div{
