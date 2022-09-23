@@ -1,5 +1,5 @@
 import React from "react";
-import {Home, Header, Gryffindor, Hufflepuff, Ravenclaw, Slytherin, Spells} from "../Pages/index"
+import {Home, Header, NotFound, Gryffindor, Hufflepuff, Ravenclaw, Slytherin, Spells} from "../Pages/index"
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 export default function Rotas(){
@@ -14,6 +14,7 @@ export default function Rotas(){
                  <Route path='/ravenclaw' element={<Ravenclaw />} />
                  <Route path='/slytherin' element={<Slytherin />} />
                  <Route path='/spells' element={<Spells />} />
+                 <Route path='*' element={<NotFound />} />
               </Routes>
           </Router> 
         </>

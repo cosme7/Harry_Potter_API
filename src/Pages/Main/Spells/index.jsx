@@ -21,7 +21,7 @@ export default function Header(){
         <main>
             <S.Container>
                 {spells.map((item, index) => (
-                    <S.Div>
+                    <S.Div key={index}>
                         <h2>{item.name}</h2>
                         <img src={Wand} alt="Wand" />
                         <p>{item.description}</p>

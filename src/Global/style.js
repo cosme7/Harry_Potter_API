@@ -25,7 +25,6 @@ export const GlobalStyle = createGlobalStyle`
         --ff-footer: 'Ubuntu', sans-serif;
         /*  */
         --clr-primary: #FFFFFF;
-        --clr-secondary: ;
         /*  */
         --bg-one: #FFFFFF;
         --bg-two: #000000;

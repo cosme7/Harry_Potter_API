@@ -24,7 +24,7 @@ export default function Ravenclaw()  {
             <S.Div key={index}>
               <h2>Actor: {item.actor}</h2>
               <h3>My role is: {item.name}</h3>
-              <p>Patronus: {item.patronus}</p>
+              <p>Patronus: {item.patronus !== "" ? item.patronus : "Sorry not disponible!" }</p>
               <div>
                 <S.Photo src={item.image} alt={item.name} title={item.name} />
                 <S.Symbol src={Flag} alt="Ravenclaw Flag" />

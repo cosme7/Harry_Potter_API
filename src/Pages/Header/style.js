@@ -11,6 +11,16 @@ export const Container = styled.div`
     nav{
         width: 100%;
     }
+
+    @media screen and (max-width:59em){
+        padding: 1rem 0.5rem;
+        row-gap: 1.5rem;
+        grid-template-columns: 1fr 50px;
+
+        nav{
+            grid-area: 2 / 2 span;
+        }
+    }
 `;
 
 export const Title = styled.div`
@@ -37,6 +47,15 @@ export const Title = styled.div`
         2px 2px 2px rgba(0,0,0,0);
         color: var(--clr-primary);
     }
+
+    @media screen and (max-width:59em){
+        grid-area: 1 / 2;
+        justify-content: flex-end;
+
+        h1{
+            display: none;
+        }
+    }
 `;
 
 export const List = styled.ul`
@@ -57,7 +76,13 @@ export const List = styled.ul`
         z-index: 10;
     }
 
-    div:where(:hover, :focus-visible){
+    @media screen and (max-width:59em){
+        div{
+            top: 2rem;
+        }
+    }
+
+    div:where(:hover, :focus-within){
         filter: drop-shadow(0 0 20px var(--bg-one));
     }
 
@@ -104,7 +129,7 @@ export const Img = styled.img`
     transition: 200ms ease-in-out;
 
     :where(:hover, :focus){
-        transform: scale(1.5);
+        transform: scale(2);
         filter: drop-shadow(0 0 10px var(--bg-one));
     }
 `;
