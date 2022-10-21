@@ -26,7 +26,7 @@ export default function Header(){
                         <img src={Wand} alt="Wand" />
                         <p>{item.description}</p>
                     </S.Div>
-                ))};
+                ))}
             </S.Container>
         </main>
         </>

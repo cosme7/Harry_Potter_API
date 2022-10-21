@@ -30,7 +30,7 @@ export default function Gryffindor(){
                 <S.Symbol src={Flag} alt="Gryffindor Flag" />
               </div>
             </S.Div>
-          ))};
+          ))}
         </S.Container>
       </main>
     </>

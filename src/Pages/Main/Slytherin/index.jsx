@@ -30,7 +30,7 @@ export default function Slytherin(){
                 <S.Symbol src={Flag} alt="Slytherin Flag" />
               </div>
             </S.Div>
-          ))};
+          ))}
         </S.Container>
       </main>
     </>

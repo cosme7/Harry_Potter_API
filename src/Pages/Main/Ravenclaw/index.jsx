@@ -30,7 +30,7 @@ export default function Ravenclaw()  {
                 <S.Symbol src={Flag} alt="Ravenclaw Flag" />
               </div>
             </S.Div>
-          ))};
+          ))}
         </S.Container>
       </main>
     </>

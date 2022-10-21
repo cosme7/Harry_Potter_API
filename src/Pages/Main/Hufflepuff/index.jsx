@@ -30,7 +30,7 @@ export default function Hufflepuff(){
                 <S.Symbol src={Flag} alt="Hufflepuff Flag" />
               </div>
             </S.Div>
-          ))};
+          ))}
         </S.Container>
       </main>
     </>
